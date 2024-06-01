@@ -20,17 +20,19 @@
                 <h1 class="titulo-login">LOGIN</h1>
                 <p class="desc-login">Faça login abaixo para receber acesso aos nossos serviços:</p>
                 <!-- FORMULÁRIO DE E-MAIL E SENHA -->
-                <form id="fomulario" action="teste.json" method="post">
+                <form id="fomulario" action="teste.json" method="post" novalidate>
                     <!-- DIV DE E-MAIL -->
                     <div class="e-mail">
                         <i class="bi bi-person-fill-lock" id="user"></i>
-                        <input type="email" id="email" name="email" placeholder="E-mail" required>
+                        <input autocomplete="off" type="email" id="email" name="email" placeholder="E-mail" required>
                     </div>
+                    <p class="erro-txt" id="error-email">Preencha com o seu e-mail!</p>
                     <!-- DIV DE SENHA -->
                     <div class="senha">
                         <i class="bi bi-key-fill" id="chave"></i>
-                        <input type="password" id="password" name="password" placeholder="Senha" required>
+                        <input autocomplete="off" type="password" id="password" name="password" placeholder="Senha" required>
                     </div>
+                    <p class="erro-txt" id="error-senha">Preencha com a sua senha!</p>
                     <button class="entrar" type="submit"><i class="bi bi-send" id="entrar"></i><p class="txt-botao">Entrar</p></button>
                 </form>
             </div>

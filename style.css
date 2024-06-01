@@ -180,6 +180,26 @@ input:focus {
     color: #ccc;
 }
 
+input:-webkit-autofill {
+    -webkit-text-fill-color: #ccc; /* Cor do texto */
+    -webkit-box-shadow: 0 0 0px 1000px rgba(26, 26, 175, 0) inset; /* Fundo transparente */
+}
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px rgba(26, 26, 175, 0) inset; /* Fundo transparente ao focar */
+}
+
+.erro-txt {
+    margin: 0;
+    margin-top: 10px;
+    font-family: "Karla", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: red;
+    cursor: default;
+    user-select: none;
+    display: none;
+}
+
 form {
     margin-top: 20px;
     display: flex;
