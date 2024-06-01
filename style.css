@@ -193,11 +193,12 @@ input:-webkit-autofill:focus {
     margin-top: 10px;
     font-family: "Karla", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 15px;
     color: red;
     cursor: default;
     user-select: none;
     display: none;
+    position: inherit;
 }
 
 form {
@@ -298,61 +299,7 @@ form {
 
 /* RESPONSIVIDADE */
 
-@media screen and (max-width: 1300px) {
-    .login-registro {
-        flex-wrap: wrap;
-        width: auto;
-        transform: scale(0.9);
-    }
-
-    .login {
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-    }
-
-    .registro {
-        border-radius: 0px;
-    }
-
-        /* TÍTULO DO LOGIN */
-    .titulo-login {
-        transform: scale(0.9);
-    }
-
-
-    /* DESCRIÇÃO DO LOGIN */
-    .desc-login {
-        transform: scale(0.9);
-    }
-
-    .registrar-se {
-        transform: scale(0.9);
-    }
-
-    .e-mail, .senha {
-        transform: scale(0.9);
-    }
-
-    #user, #chave {
-        transform: scale(0.9);
-    }
-
-    input {
-        transform: scale(0.9);
-    }
-
-    .titulo-registro {
-        transform: scale(0.9);
-    }
-
-    .desc-registro {
-        transform: scale(0.9);
-    }
-}
-
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
             /* TÍTULO DO LOGIN */
             .titulo-login {
                 transform: scale(0.9);
@@ -373,6 +320,61 @@ form {
             }
         
             input {
+                transform: scale(0.9);
+            }
+            .login-registro {
+                flex-wrap: wrap;
+                width: auto;
+                transform: scale(0.9);
+            }
+        
+            .login {
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                margin: auto;
+            }
+        
+            .registro {
+                border-radius: 0px;
+            }
+        
+                /* TÍTULO DO LOGIN */
+            .titulo-login {
+                transform: scale(0.9);
+            }
+        
+        
+            /* DESCRIÇÃO DO LOGIN */
+            .desc-login {
+                transform: scale(0.9);
+            }
+        
+            .registrar-se {
+                transform: scale(0.9);
+            }
+        
+            .e-mail, .senha {
+                transform: scale(0.9);
+            }
+        
+            #user, #chave {
+                transform: scale(0.9);
+            }
+        
+            input {
+                transform: scale(0.9);
+            }
+        
+            .erro-txt {
+                transform: scale(0.9);
+            }
+        
+            .titulo-registro {
+                transform: scale(0.9);
+            }
+        
+            .desc-registro {
                 transform: scale(0.9);
             }
 }
