@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Login - Agency Nexa</title>
+</head>
+<body>
+    <!-- COBRE A TELA TODA DO USUÁRIO -->
+    <div class="conteiner"> 
+        <!-- CONTEINER (PAI) DA DIV LOGIN/REGISTRO -->
+        <div class="login-registro">
+            <!-- DIV LOGIN -->
+            <div class="login">
+                <h1 class="titulo-login">LOGIN</h1>
+                <p class="desc-login">Faça login abaixo para receber acesso aos nossos serviços:</p>
+                <!-- FORMULÁRIO DE E-MAIL E SENHA -->
+                <form action="#" method="post">
+                    <!-- DIV DE E-MAIL -->
+                    <div class="e-mail">
+                        <i class="bi bi-person-fill-lock" id="user"></i>
+                        <input type="email" id="email" name="email" placeholder="E-mail" required>
+                    </div>
+                    <!-- DIV DE SENHA -->
+                    <div class="senha">
+                        <i class="bi bi-key-fill" id="chave"></i>
+                        <input type="password" id="password" name="password" placeholder="Senha" required>
+                    </div>
+                    <button class="entrar"><i class="bi bi-send" id="entrar"></i><p class="txt-botao">Entrar</p></button>
+                </form>
+            </div>
+            <!-- DIV REGISTRO -->
+            <div class="registro">
+                <h1 class="titulo-registro">É NOVO?</h1>
+                <p class="desc-registro">Clique no botão á baixo e venha ser da Nexa!</p>
+                <button class="registrar-se"><i class="bi bi-pencil-square" id="lapis"></i><p class="registrar-txt">Registrar-se</p></button>
+            </div>
+        </div>
+        <img class="discord" src="discord.svg" alt="Discord Icon">
+    </div>
+</body>
+</html>

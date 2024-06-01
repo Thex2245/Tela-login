@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* DEFINE AS CONFIGURAÇÕES INICIAIS DA PÁGINA */
+html, body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 200vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    background-color: #000014;
+    background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.096) 0.25px, transparent 1px), /* Linhas horizontais */
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.096) 0.25px, transparent 1px); /* Linhas verticais */
+background-size: 50px 50px; /* Tamanho das linhas */
+}
+
+
+/* AMBOS ABAIXO DEFINEM AS LINHAS DE FUNDO (APENAS PARA DECORAÇÃO) */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    height: 100vh;
+}
+
+.grid-container > * {
+    border: 1px solid #ccc; 
+    padding: 20px;
+}
+
+/* TELA */
+.conteiner {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* POSSUI A DIV "LOGIN" E "REGISTRO" */
+.login-registro {
+    width: 70vw;
+    height: 70vh;
+    backdrop-filter: blur(0.5px);
+    border: 1px solid #cccccc30;
+    border-radius: 15px;
+    background-color: #000014;
+    display: flex;
+    padding: 0px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    flex-wrap: nowrap;
+    }
+
+/* DEFINE A DIV PARA OCUPAR APENAS 50% NA HORIZONTAL*/
+.login {
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 385px;
+    max-height: 535px;
+}
+
+/* TÍTULO DO LOGIN */
+.titulo-login {
+    width: 160px;
+    height: 65px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    color: #ffff;
+    font-size: 50px;
+    text-align: center;
+    animation: fadeInAnimation 1.5s ease-in forwards; 
+    margin: 0;
+    cursor: default;
+    user-select: none;
+}
+
+
+/* DESCRIÇÃO DO LOGIN */
+.desc-login {
+    width: 250px;
+    color: #383bd3;
+    font-family: "Karla", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 0;
+    cursor: default;
+    user-select: none;
+}
+
+.e-mail, .senha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c1c2742;
+    border-radius: 15px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#user, #chave, #entrar, #lapis {
+    color: #ffff;
+    font-size: 25px;
+    margin: 0px 10px 0px 10px;
+}
+
+.entrar {
+    border: #383bd3 3px solid;
+    background: #383bd3;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    border-radius: 0.9em;
+    border: none;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #383bd3;
+    overflow: hidden;
+    position: relative;
+    height: 48px;
+    width: 178.26px;
+    padding-right: 3.3em;
+    cursor: pointer;
+    margin-top: 20px;
+
+    /* Letras */
+    color: #ffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+
+.entrar:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: #000014;
+    border: #383bd3 3px solid;
+}
+
+.entrar:hover #entrar .txt-botao {
+    visibility: hidden;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+    outline: none;
+    border-style: none;
+    font-family: "Karla", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ccc;
+    padding: 10px;
+    background-color: rgba(26, 26, 175, 0);
+}
+
+input:focus {
+    outline: none;
+    border-style: none;
+    color: #ccc;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* DEFINE A DIV PARA OCUPAR APENAS 50% NA HORIZONTAL*/
+.registro {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: #383ad36b;
+    border-radius: 0px 15px 15px 0px;
+    border-left: 1px solid #cccccc30;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* TÍTULO DO REGISTRO */
+.titulo-registro {
+    width: 600px;
+    height: 65px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    color: #ffff;
+    font-size: 50px;
+    text-align: center;
+    animation: fadeInAnimation 1.5s ease-in forwards; 
+    margin: 0;
+    cursor: default;
+    user-select: none;
+}
+
+/* DESCRIÇÃO DO REGISTRO */
+.desc-registro {
+    width: 250px;
+    color: #000000;
+    font-family: "Karla", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 0;
+    cursor: default;
+    user-select: none;
+}
+
+.registrar-se {
+    border: #383bd3 3px solid;
+    background: #383bd3;
+    padding: 0.35em;
+    padding-left: 1.0em;
+    border-radius: 0.9em;
+    border: none;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #383bd3;
+    overflow: hidden;
+    position: relative;
+    height: 60px;
+    width: 220px;
+    padding-right: 2em;
+    cursor: pointer;
+    margin-top: 20px;
+
+    /* Letras */
+    color: #ffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+
+.registrar-se:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: #000014;
+    border: #383bd3 3px solid;
+}
+
+.registrar-txt {
+    width: 120px;
+}
+
+.discord {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    cursor: pointer;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 1300px) {
+    .login-registro {
+        flex-wrap: wrap;
+        width: auto;
+        transform: scale(0.8);
+    }
+
+    .login {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .registro {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+        /* TÍTULO DO LOGIN */
+    .titulo-login {
+        transform: scale(0.8);
+    }
+
+
+    /* DESCRIÇÃO DO LOGIN */
+    .desc-login {
+        transform: scale(0.8);
+    }
+
+    .e-mail, .senha {
+        transform: scale(0.8);
+    }
+
+    #user, #chave {
+        transform: scale(0.8);
+    }
+
+    input {
+        transform: scale(0.8);
+    }
+
+    .titulo-registro {
+        transform: scale(0.8);
+    }
+
+    .desc-registro {
+        transform: scale(0.8);
+    }
+}
+
+@media screen and (max-width: 400px){
+            /* TÍTULO DO LOGIN */
+            .titulo-login {
+                transform: scale(0.8);
+            }
+        
+        
+            /* DESCRIÇÃO DO LOGIN */
+            .desc-login {
+                transform: scale(0.8);
+            }
+        
+            .e-mail, .senha {
+                transform: scale(0.8);
+            }
+        
+            #user, #chave {
+                transform: scale(0.8);
+            }
+        
+            input {
+                transform: scale(0.8);
+            }
+}
