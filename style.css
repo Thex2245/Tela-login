@@ -300,6 +300,19 @@ form {
 /* RESPONSIVIDADE */
 
 @media screen and (max-width: 500px){
+
+            html, body {
+                overflow-y: visible;
+            }
+
+            .conteiner {
+                align-items: start;
+            }
+
+            .discord {
+                transform: scale(0.5);
+            }
+
             /* TÍTULO DO LOGIN */
             .titulo-login {
                 transform: scale(0.9);
@@ -325,6 +338,7 @@ form {
             .login-registro {
                 flex-wrap: wrap;
                 width: auto;
+                height: 125vh;
                 transform: scale(0.9);
             }
         
@@ -333,10 +347,12 @@ form {
                 align-items: center;
                 justify-content: center;
                 margin: auto;
+                margin-top: 0;
+                margin-bottom: 0;
             }
         
             .registro {
-                border-radius: 0px;
+                border-radius: 0px 0px 15px 15px;
             }
         
                 /* TÍTULO DO LOGIN */

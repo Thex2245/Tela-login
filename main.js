@@ -34,3 +34,9 @@ form.addEventListener("submit", (event) => {
         errorSenha.style.display = "none"
     });
 });
+
+const btn_discord = document.querySelector(".discord");
+
+btn_discord.addEventListener("click", () => {
+    window.open("https://discord.gg/agencynexa", "_blank")
+})
