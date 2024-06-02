@@ -1,6 +1,8 @@
+
+
 const inputEmail = document.querySelector("#email");
 const inputPassword = document.querySelector("#password");
-const form = document.querySelector("#fomulario");
+const form = document.querySelector("form");
 const divEmail = document.querySelector(".e-mail");
 const divPassword = document.querySelector(".senha");
 
@@ -8,8 +10,9 @@ const errorEmail = document.querySelector("#error-email")
 const errorSenha = document.querySelector("#error-senha")
 
 form.addEventListener("submit", (event) => {
-    event.preventDefault()
     
+    event.preventDefault()
+
     // Verificação do input e-mail
     if (inputEmail.value === '') {
         divEmail.classList.add("erro")
@@ -35,8 +38,13 @@ form.addEventListener("submit", (event) => {
     });
 });
 
+// Funcionamento do Botão do Discord
 const btn_discord = document.querySelector(".discord");
+console.log(btn_discord)
+
 
 btn_discord.addEventListener("click", () => {
-    window.open("https://discord.gg/agencynexa", "_blank")
-})
+    console.log('Discord button clicked');
+    window.open("https://discord.gg/agencynexa", "_blank");
+});
+
