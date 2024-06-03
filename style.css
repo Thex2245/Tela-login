@@ -67,7 +67,6 @@ background-size: 50px 50px; /* Tamanho das linhas */
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 40px 50px 40px 50px;
 }
 
 .dados-acesso {

@@ -71,7 +71,7 @@ btnRegistro.addEventListener("click", function () {
             element.style.display = 'inherit';
         });
         maquinas.style.display = 'flex';
-        var caixaDeInfo = document.querySelector(".caixa-de-info")
+        maquinas.style.margin = '40px 50px 40px 50px';
     }
 })
 
