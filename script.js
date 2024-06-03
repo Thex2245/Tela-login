@@ -40,11 +40,38 @@ form.addEventListener("submit", (event) => {
 
 // Funcionamento do Botão do Discord
 const btn_discord = document.querySelector(".discord");
-console.log(btn_discord)
-
 
 btn_discord.addEventListener("click", () => {
     console.log('Discord button clicked');
     window.open("https://discord.gg/agencynexa", "_blank");
 });
+
+// APENAS TEMPORÁRIO
+const btnRegistro = document.querySelector(".registrar-se");
+const loginRegistro = document.querySelector(".login-registro");
+
+btnRegistro.addEventListener("click", function () {
+    loginRegistro.innerHTML = ""
+    loginRegistro.style.alignItems = "center"
+    loginRegistro.style.justifyContent = "center"
+    const loading = document.createElement("div")
+    loading.classList.add("lds-dual-ring")
+    loginRegistro.appendChild(loading)
+    setTimeout(carregarPainel, 2000);
+
+    function carregarPainel (){
+        loginRegistro.innerHTML = ""
+        loginRegistro.style.width = "auto"
+        loginRegistro.style.height = "auto"
+        
+        var maquinas = document.querySelector('.maquinas');
+        loginRegistro.appendChild(maquinas);
+        var elements = document.querySelectorAll('.maquinas *');
+        elements.forEach(function(element) {
+            element.style.display = 'inherit';
+        });
+        maquinas.style.display = 'flex';
+        var caixaDeInfo = document.querySelector(".caixa-de-info")
+    }
+})
 

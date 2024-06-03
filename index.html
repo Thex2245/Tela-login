@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="nexa-icon.png" type="image/png">
-    <script src="main.js" defer></script>
+    <script src="script.js" defer></script>
     <title>Login - Agency Nexa</title>
 </head>
 <body>
@@ -40,7 +40,37 @@
             <div class="registro">
                 <h1 class="titulo-registro">É NOVO?</h1>
                 <p class="desc-registro">Clique no botão á baixo e venha ser da Nexa!</p>
-                <button class="registrar-se"><i class="bi bi-pencil-square" id="lapis"></i><p class="registrar-txt">Registrar-se</p></button>
+                <button class="registrar-se" type="submit"><i class="bi bi-pencil-square" id="lapis"></i><p class="registrar-txt">Registrar-se</p></button>
+            </div>
+        </div>
+        <div class="maquinas">
+            <h1 class="dados-acesso">Dados de acesso</h1>
+            <div class="caixa-de-info">
+                <div class="info-with-txt">
+                    <p class="txt-info">Endereço IP:</p>
+                    <div class="info">
+                        <input class="info-maquinas" type="text" value="00.000.000" readonly>
+                        <i class="bi bi-clipboard-fill copy-icon"></i>
+                    </div>
+                </div>
+                <div class="info-with-txt">
+                    <p class="txt-info">Usuário:</p>
+                    <div class="info">
+                        <input class="info-maquinas" type="text" value="shadow" readonly>
+                        <i class="bi bi-clipboard-fill copy-icon"></i>
+                    </div>
+                </div>
+                <div class="info-with-txt">
+                    <p class="txt-info">Senha:</p>
+                    <div class="info">
+                        <input class="info-maquinas" type="password" value="senhaaleatoria" readonly>
+                        <i class="bi bi-clipboard-fill copy-icon"></i>
+                    </div>
+                </div>
+                <div class="botoes">
+                    <button class="btn-ligar">Ligar</button>
+                    <button class="btn-sunshine">Liberar PIN</button>
+                </div>
             </div>
         </div>
         <img class="discord" src="discord.svg" alt="Discord Icon">
