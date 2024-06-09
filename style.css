@@ -199,14 +199,6 @@ background-size: 50px 50px; /* Tamanho das linhas */
     position: relative;
 }
 
-.nexa-icon {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 30px;
-    height: auto;
-}
-
 /* TÍTULO DO LOGIN */
 .titulo-login {
     width: 160px;
@@ -417,15 +409,6 @@ form {
 
 .registrar-txt {
     width: 120px;
-}
-
-.discord {
-    width: 80px;
-    height: 80px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    cursor: pointer;
 }
 
 /* CARREGANDO */
